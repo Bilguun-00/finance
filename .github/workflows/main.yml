@@ -50,9 +50,15 @@ jobs:
       uses: subosito/flutter-action@v2
       with:
         flutter-version: ${{ env.FLUTTER_VERSION }}
+
     - name: Install Dependencies
       run: |
-          pip install flet
+        pip install flet
+
+    - name: Run Script
+      run: |
+           chmod +x your-script.sh
+           ./your-script.sh
           
     - name: Flet Build Web
       run: |
