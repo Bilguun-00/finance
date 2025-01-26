@@ -54,11 +54,6 @@ jobs:
     - name: Install Dependencies
       run: |
         pip install flet
-
-    - name: Run Script
-      run: |
-           chmod +x your-script.sh
-           ./your-script.sh
           
     - name: Flet Build Web
       run: |
